@@ -6,4 +6,5 @@
 	"project_short_description": "A test project",
 	"version": "0.0.1",
 	"doc_url": "https://readthedocs.org/projects/calctest/"
+	"_copy_without_render": [".github/workflows/*.yml"]
 }
