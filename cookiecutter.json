@@ -4,5 +4,7 @@
 	"project_name": "CALC_TEST",
 	"repo_name": "calc-test-repo",
 	"project_short_description": "A test project",
-	"version": "0.0.1"
+	"version": "0.0.1",
+	"test_pypi_secret": "secrets.TEST_PYPI_TOKEN",
+	"pypi_secret": "secrets.PYPI_TOKEN"
 }
