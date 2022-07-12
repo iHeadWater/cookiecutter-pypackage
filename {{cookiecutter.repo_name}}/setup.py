@@ -19,7 +19,7 @@ setup(
     name='{{ cookiecutter.repo_name }}',
     version=''.join(random.sample(string.digits, 8)),
     description='{{ cookiecutter.project_short_description }}',
-    long_description='https://readthedocs.org/projects/calctest/'
+    long_description='https://readthedocs.org/projects/calctest/',
     author='{{ cookiecutter.full_name }}',
     url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',
     packages=[
