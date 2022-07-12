@@ -1,5 +1,1 @@
-include AUTHORS.rst
-include CONTRIBUTING.rst
-include HISTORY.rst
-include LICENSE
-include README.rst
+recursive-include XXX *.csv *.txt # 打包需包含csv、txt为后缀的文件；XXX为包名
