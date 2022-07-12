@@ -2,6 +2,8 @@
 
 import os
 import sys
+import random
+import string
 
 try:
     from setuptools import setup
@@ -13,19 +15,11 @@ if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist upload')
     sys.exit()
 
-readme = open('README.rst').read()
-doclink = """
-Documentation
--------------
-
-The full documentation is at http://{{ cookiecutter.repo_name }}.rtfd.org."""
-history = open('HISTORY.rst').read().replace('.. :changelog:', '')
-
 setup(
     name='{{ cookiecutter.repo_name }}',
     version=''.join(random.sample(string.digits, 8)),
     description='{{ cookiecutter.project_short_description }}',
-    long_description=readme + '\n\n' + doclink + '\n\n' + history,
+    long_description='https://readthedocs.org/projects/calctest/'
     author='{{ cookiecutter.full_name }}',
     url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',
     packages=[
