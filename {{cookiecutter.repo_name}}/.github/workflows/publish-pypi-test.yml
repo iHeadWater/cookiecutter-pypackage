@@ -27,9 +27,9 @@ jobs:
     - name: Build package
       run: python -m build
     - name: Publish package to PyPI Test with Twine
-      run: twine upload --repository testpypi dist/* --username __token__ --password ${{cookiecutter.test_pypi_secret}}
+      run: twine upload --repository testpypi dist/* --username __token__ --password ${{ secrets.TEST_PYPI_TOKEN }}
     - name: Publish package to PyPI
       uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
       with:
         user: __token__
-        password: ${{cookiecutter.pypi_secret}}
+        password: ${{ secrets.PYPI_API_TOKEN }}
