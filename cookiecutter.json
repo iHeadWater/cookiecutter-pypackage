@@ -7,4 +7,5 @@
 	"version": "0.0.1",
 	"test_pypi_secret": "{{ secrets.TEST_PYPI_TOKEN }}",
 	"pypi_secret": "{{ secrets.PYPI_TOKEN }}"
+	"doc_url": "https://readthedocs.org/projects/calctest/"
 }
